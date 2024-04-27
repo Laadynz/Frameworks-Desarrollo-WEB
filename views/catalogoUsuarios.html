@@ -13,10 +13,10 @@
     <a href="/cc">Clientes</a>
 
     <table border="1">
-        <tr><th>Id usuario</th><th>Nombre usuario</th><th>Precio del Producto</th></tr>
+        <tr><th>Id usuario</th><th>Nombre usuario</th><th>Primer apellido</th><th>Segundo apellido</th></tr>
         <% usuarios.forEach(usuario => { %> 
-            <tr><td><%= usuario.id_usuario %></td><td><%= usuario.nombre_usuario %></td><td>$<%= usuario.ap1_usuario %></td>
-                <td>$<%= usuario.ap2_usuario %></td></tr>
+            <tr><td><%= usuario.id_usuario %></td><td><%= usuario.nombre_usuario %></td><td><%= usuario.ap1_usuario %></td>
+                <td><%= usuario.ap2_usuario %></td></tr>
         <% }); %>
     </table>
     
